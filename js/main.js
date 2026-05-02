@@ -38,21 +38,52 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ========== BOTONES DE CONTACTO (WhatsApp & Instagram) ==========
-  const whatsappFloat = document.getElementById('whatsappFloat');
-  const instagramBtn = document.getElementById('instagramBtn');
+  // ========== FUNCIÓN PARA ABRIR WHATSAPP (reutilizable) ==========
+  const phoneNumber = '5493412776526';
+  
+  const abrirWhatsApp = (mensajePersonalizado) => {
+    const message = encodeURIComponent(mensajePersonalizado);
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+  };
 
-  // Función para abrir WhatsApp con el mensaje personalizado
-  if (whatsappFloat) {
-    whatsappFloat.addEventListener('click', (e) => {
+  // 1. Botón "Inscribirse" del menú hamburguesa
+  const inscribirBtnNav = document.getElementById('inscribirBtnNav');
+  if (inscribirBtnNav) {
+    inscribirBtnNav.addEventListener('click', (e) => {
       e.preventDefault();
-      const phoneNumber = '5493412776526'; 
-      const message = encodeURIComponent('¡Hola! Vengo desde la web y quiero más información sobre el taller encenderIdea()');
-      window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+      abrirWhatsApp('Hola, estuve visitando la web y quiero información del taller de programación y robótica.');
     });
   }
 
-  // Función para Instagram
+  // 2. Botón "¡Quiero participar!" del hero
+  const inscribirBtnHero = document.getElementById('inscribirBtnHero');
+  if (inscribirBtnHero) {
+    inscribirBtnHero.addEventListener('click', (e) => {
+      e.preventDefault();
+      abrirWhatsApp('Hola, estuve visitando la web y quiero información del taller de programación y robótica.');
+    });
+  }
+
+  // 3. Botón WhatsApp flotante
+  const whatsappFloat = document.getElementById('whatsappFloat');
+  if (whatsappFloat) {
+    whatsappFloat.addEventListener('click', (e) => {
+      e.preventDefault();
+      abrirWhatsApp('Hola, estuve visitando la web y quiero información del taller de programación y robótica.');
+    });
+  }
+
+  // 4. Botón WhatsApp grande en la sección contacto
+  const whatsappContactoBtn = document.getElementById('whatsappContactoBtn');
+  if (whatsappContactoBtn) {
+    whatsappContactoBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      abrirWhatsApp('Hola, estuve visitando la web y quiero información del taller de programación y robótica.');
+    });
+  }
+
+  // ========== INSTAGRAM ==========
+  const instagramBtn = document.getElementById('instagramBtn');
   if (instagramBtn) {
     instagramBtn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -70,7 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (target) {
         e.preventDefault();
         
-        // Si el menú móvil está abierto, lo cerramos al hacer click en un link
         const navLinks = document.getElementById('navLinks');
         if (navLinks && navLinks.classList.contains('active')) {
           navLinks.classList.remove('active');
@@ -99,7 +129,6 @@ document.addEventListener('DOMContentLoaded', () => {
       navLinks.classList.toggle('active');
     });
 
-    // Cerrar el menú si se hace click fuera de él
     document.addEventListener('click', (e) => {
       if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
         navLinks.classList.remove('active');
