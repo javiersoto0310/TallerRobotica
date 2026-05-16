@@ -41,42 +41,49 @@
   </ul>
 </nav>
 
-<!-- HERO SECTION (OPTIMIZADO) -->
+<!-- HERO SECTION -->
 <section id="inicio">
   <div class="hero-badge">🚀 Para chicos de 9 a 15 años · Roldán, Santa Fe</div>
-  <h1 class="hero-title">Taller de robótica Y programación<br>en <span class="accent">Roldán, Santa Fe</span></h1>
+
+  <!-- ✏️ CAMBIO: se agregó <span id="hero-typed"> para el efecto de tipeo.
+       El JS escribe y borra frases dentro de ese span automáticamente. -->
+  <h1 class="hero-title">
+    <span id="hero-typed"></span><br>
+  </h1>
+
   <p class="hero-sub">Clases presenciales y online. Aprendé a programar tus propios robots con Arduino. Sumaremos inteligencia artificial y Python a tus proyectos.</p>
   
   <a href="#" class="btn-primary" id="inscribirBtnHero">✨ ¡Quiero participar del taller! ✨</a>
 </section>
 
-<!-- SECCIÓN TALLER (OPTIMIZADA) -->
+<!-- SECCIÓN TALLER -->
 <section id="taller">
   <div class="section-inner">
     <div class="section-label">Nuestro espacio</div>
     <h2 class="section-title">Aprendizaje práctico y divertido</h2>
     
     <div class="cards-grid">
-      <article class="card">
+      <!-- ✏️ CAMBIO: clase "reveal" agregada a cada card -->
+      <article class="card reveal">
         <img src="img/arduino.jpg" alt="Chicos armando un robot seguidor de línea con Arduino">
         <div class="card-body">
-          <h3 class="card-title">🤖 Robótica con Arduino</h3>
+          <h3 class="card-title"> Robótica con Arduino</h3>
           <p class="card-desc">Aprendé electrónica y programación creando tus propios robots desde cero. Sensores, motores y lógica de control.</p>
         </div>
       </article>
       
-      <article class="card">
+      <article class="card reveal">
         <img src="img/python.jpg" alt="Estudiante programando videojuegos en Python">
         <div class="card-body">
-          <h3 class="card-title">🐍 Programación Python</h3>
+          <h3 class="card-title"> Programación Python</h3>
           <p class="card-desc">Dominá este lenguaje profesional. Desarrollá videojuegos, aplicaciones y proyectos de Inteligencia Artificial (IA).</p>
         </div>
       </article>
       
-      <article class="card">
+      <article class="card reveal">
         <img src="img/auto.jpg" alt="Proyectos de robótica creativa y diseño 3D">
         <div class="card-body">
-          <h3 class="card-title">💡 Proyectos Divertidos</h3>
+          <h3 class="card-title"> Proyectos Divertidos</h3>
           <p class="card-desc">Creá semáforos inteligentes, robots controlados por celular y tus propios inventos tecnológicos.</p>
         </div>
       </article>
@@ -91,40 +98,38 @@
     <h2 class="section-title">Viví la experiencia de la robótica educativa</h2>
     
     <div class="gallery-grid">
-      <div class="gallery-item"><img src="img/galeria/casa.jpg" alt="Taller de programación para niños en Roldán" loading="lazy"></div>
-      <div class="gallery-item"><img src="img/galeria/brazo.jpg" alt="Armando un brazo robótico con Arduino" loading="lazy"></div>
-      <div class="gallery-item"><img src="img/galeria/sensor.jpg" alt="Conectando sensores en clases de robótica" loading="lazy"></div>
-      <div class="gallery-item"><img src="img/galeria/clase.jpg" alt="Clase presencial de tecnología en Roldán" loading="lazy"></div>
-      <div class="gallery-item"><img src="img/galeria/juego.jpg" alt="Chica programando su primer videojuego en Python" loading="lazy"></div>
-      <div class="gallery-item"><img src="img/galeria/codigo.jpg" alt="Aprendiendo a leer y escribir código" loading="lazy"></div>
+      <!-- ✏️ CAMBIO: clase "reveal" agregada a cada item de galería -->
+      <div class="gallery-item reveal"><img src="img/galeria/casa.jpg" alt="Taller de programación para niños en Roldán" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="img/galeria/brazo.jpg" alt="Armando un brazo robótico con Arduino" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="img/galeria/sensor.jpg" alt="Conectando sensores en clases de robótica" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="img/galeria/clase.jpg" alt="Clase presencial de tecnología en Roldán" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="img/galeria/juego.jpg" alt="Chica programando su primer videojuego en Python" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="img/galeria/codigo.jpg" alt="Aprendiendo a leer y escribir código" loading="lazy"></div>
     </div>
   </div>
 </section>
 
-<!-- METODOLOGÍA (OPTIMIZADA) -->
+<!-- METODOLOGÍA -->
 <section id="info">
   <div class="section-inner">
     <div class="section-label">Metodología</div>
     <h2 class="section-title">¿Cómo aprenden los futuros programadores?</h2>
     
     <div class="info-grid">
-      <div class="info-card">
-        <span class="info-icon">🔧</span>
+      <!-- ✏️ CAMBIO: clase "reveal" agregada a cada info-card -->
+      <div class="info-card reveal">
         <h3>Aprendizaje práctico</h3>
         <p>Nada de teoría aburrida. En cada clase los chicos construyen y programan proyectos reales.</p>
       </div>
-      <div class="info-card">
-        <span class="info-icon">🧠</span>
+      <div class="info-card reveal">
         <h3>Pensamiento lógico</h3>
         <p>Desarrollamos la capacidad de resolver problemas y crear algoritmos desde cero.</p>
       </div>
-      <div class="info-card">
-        <span class="info-icon">👥</span>
+      <div class="info-card reveal">
         <h3>Trabajo en equipo</h3>
         <p>Aprendemos juntos, compartimos ideas y solucionamos desafíos tecnológicos en grupo.</p>
       </div>
-      <div class="info-card">
-        <span class="info-icon">📅</span>
+      <div class="info-card reveal">
         <h3>Encuentros semanales</h3>
         <p>1 hora 30 minutos por semana para avanzar a tu ritmo y sin presión.</p>
       </div>
@@ -139,8 +144,8 @@
     <h2 class="section-title">Clases presenciales u online personalizadas</h2>
     
     <div class="modalidades-grid">
-      <div class="modalidad-card presencial">
-        <div class="modalidad-icon">🏫</div>
+      <!-- ✏️ CAMBIO: clase "reveal" agregada a cada modalidad-card -->
+      <div class="modalidad-card presencial reveal">
         <h3 class="modalidad-title">Presencial</h3>
         <div class="modalidad-badge">En Roldán, Santa Fe</div>
         <ul class="modalidad-lista">
@@ -153,8 +158,7 @@
         <div class="modalidad-precio">Consultar disponibilidad de vacantes</div>
       </div>
       
-      <div class="modalidad-card online">
-        <div class="modalidad-icon">💻</div>
+      <div class="modalidad-card online reveal">
         <h3 class="modalidad-title">Online Personalizado</h3>
         <div class="modalidad-badge">Desde tu casa</div>
         <ul class="modalidad-lista">
@@ -177,15 +181,20 @@
     <h2 class="section-title">Tus guías en el mundo de la tecnología</h2>
     
     <div class="profes-grid">
-      <div class="profe-card">
-        <div class="profe-avatar">🤖</div>
+      <!-- ✏️ CAMBIO: Se agregaron imágenes representativas de Arduino y Python con fondos translúcidos -->
+      <div class="profe-card reveal">
+        <div class="profe-avatar" style="background: rgba(0, 135, 143, 0.15); padding: 12px; display: flex; align-items: center; justify-content: center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" alt="Ilustración de Robótica y Arduino" style="width: 85%; height: 85%; object-fit: contain;">
+        </div>
         <h3 class="profe-name">Leonel Soto</h3>
         <p class="profe-role">Robótica Educativa</p>
         <p class="profe-bio">Mi meta es que los chicos dejen de ser solo usuarios y se conviertan en creadores tecnológicos.</p>
       </div>
       
-      <div class="profe-card">
-        <div class="profe-avatar avatar-blue">💻</div>
+      <div class="profe-card reveal">
+        <div class="profe-avatar" style="background: rgba(55, 118, 171, 0.15); padding: 12px; display: flex; align-items: center; justify-content: center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Ilustración de Programación en Python" style="width: 80%; height: 80%; object-fit: contain;">
+        </div>
         <h3 class="profe-name">Javier Soto</h3>
         <p class="profe-role">Técnico Superior en Desarrollo de Software</p>
         <p class="profe-bio">
@@ -206,28 +215,28 @@
     
     <div class="contact-completo">
       <div class="contact-info-detallada">
-        <div class="contact-item">
+        <div class="contact-item reveal">
           <span class="contact-icon">📍</span>
           <div>
             <h4>Ubicación del taller</h4>
             <p>Tierra De Sueños 3, Roldán, Santa Fe</p>
           </div>
         </div>
-        <div class="contact-item">
+        <div class="contact-item reveal">
           <span class="contact-icon">📧</span>
           <div>
             <h4>Email</h4>
             <p>encenderidea@gmail.com</p>
           </div>
         </div>
-        <div class="contact-item">
+        <div class="contact-item reveal">
           <span class="contact-icon">📱</span>
           <div>
             <h4>Teléfono / WhatsApp</h4>
             <p>341 277-6526</p>
           </div>
         </div>
-        <div class="contact-item">
+        <div class="contact-item reveal">
           <span class="contact-icon">📸</span>
           <div>
             <h4>Instagram</h4>
