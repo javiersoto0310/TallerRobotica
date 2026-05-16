@@ -120,10 +120,10 @@ nav {
   color: #fff;
   line-height: 1.2;
   margin-bottom: 1.2rem;
-  /* Altura fija = 1 línea de texto a tamaño máximo (3.5rem × 1.2 line-height).
-     Así el párrafo y el botón de abajo nunca se mueven mientras tipea. */
   display: block;
-  height: 5rem;
+  
+  /* ✏️ CAMBIO AQUÍ: min-height en lugar de height fijo para PC */
+  min-height: 5rem;
 }
 .hero-title .accent { color: var(--green); }
 
@@ -355,11 +355,11 @@ footer { background: var(--blue-dark); color: #fff; padding: 3rem 2rem; }
   .menu-toggle { display: block; }
   .nav-links { display: none; }
   
-  /* En celular: font-size fijo 2rem × 1.2 line-height = 2.4rem por línea.
-     Las frases más largas ocupan 2 líneas → height: 4.8rem + margen generoso. */
   .hero-title { 
     font-size: 2rem;
-    height: 5.5rem;
+    
+    /* ✏️ CAMBIO AQUÍ: min-height en lugar de height fijo para celulares */
+    min-height: 5.5rem;
   }
   
   .profes-grid { grid-template-columns: 1fr; }
