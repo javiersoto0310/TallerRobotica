@@ -120,6 +120,10 @@ nav {
   color: #fff;
   line-height: 1.2;
   margin-bottom: 1.2rem;
+  
+  /* ✏️ MODIFICACIÓN: Fijamos altura en PC para estructurar el bloque */
+  display: block;
+  min-height: 110px;
 }
 .hero-title .accent { color: var(--green); }
 
@@ -350,7 +354,14 @@ footer { background: var(--blue-dark); color: #fff; padding: 3rem 2rem; }
 @media (max-width: 768px) {
   .menu-toggle { display: block; }
   .nav-links { display: none; }
-  .hero-title { font-size: 2rem; }
+  
+  /* ✏️ MODIFICACIÓN: En celulares, fijamos la altura mínima a 160px para que el
+     texto dinámico tenga espacio de sobra y no empuje lo que viene abajo */
+  .hero-title { 
+    font-size: 2rem; 
+    min-height: 160px; 
+  }
+  
   .profes-grid { grid-template-columns: 1fr; }
   .contact-info-detallada { grid-template-columns: 1fr; }
   .contact-buttons { flex-direction: column; align-items: center; }
